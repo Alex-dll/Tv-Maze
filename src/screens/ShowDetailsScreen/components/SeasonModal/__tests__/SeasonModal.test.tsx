@@ -1,5 +1,5 @@
 import React, {createRef} from 'react';
-import {render, act, fireEvent} from '@testing-library/react-native';
+import {render, act, fireEvent} from 'test-utils';
 
 import {SeasonModal} from '../SeasonModal';
 import {Modalize} from 'react-native-modalize';
@@ -46,6 +46,6 @@ describe('SeasonModal', () => {
 
     fireEvent.press(season2Element);
 
-    expect(onSelectSeasonMock).toBeCalledWith('2');
+    expect(onSelectSeasonMock).toHaveBeenCalledWith('2');
   });
 });
