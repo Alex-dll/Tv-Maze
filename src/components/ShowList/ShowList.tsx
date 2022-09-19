@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, FlatListProps, ListRenderItemInfo, Text} from 'react-native';
+import {FlatList, FlatListProps, ListRenderItemInfo} from 'react-native';
 import {Show} from '../../models/ShowModel';
 import {LoadingIndicator} from '../LoadingIndicator/LoadingIndicator';
 import {ShowListItem} from './components/ShowListItem';
